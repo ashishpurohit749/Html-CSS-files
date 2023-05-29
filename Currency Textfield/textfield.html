@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Textfield</title>
+  <link rel="stylesheet" type="text/css" href="textfield.css">
+</head>
+<body>
+  <form>
+    <label for="currency">Currency:</label>
+    <input type="text" id="currency" name="currency" placeholder="Enter amount in currency" oninput="formatCurrency(this)" onblur="addDecimals(this)" onkeydown="restrictInput(event)">
+  </form>
+
+  <script src="textfield.js"></script>
+</body>
+</html>
