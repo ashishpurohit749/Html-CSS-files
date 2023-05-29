@@ -1,0 +1,230 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .navbar-title {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .navbar-items {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .navbar-item {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navbar-item:hover:before,
+  .navbar-item:hover:after {
+    transform: scaleX(1);
+  }
+  
+  .navbar-item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navbar-item:before,
+  .navbar-item:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff9800;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-item:last-child {
+    margin-right: 0;
+  }
+  
+  .dropdown-toggle::after {
+    content: none; /* Remove the dropdown arrow */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    display: none;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #ff9800;
+  }
+  
+  .navbar-item:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Carousel Styles */
+
+  #carouselSection {
+    margin-bottom: 30px;
+  }
+  
+  .carousel-item img {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("previous-icon.png"); /* Replace with your icon image URL */
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("next-icon.png"); /* Replace with your icon image URL */
+  }
+
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    opacity: 1;
+  }
+  
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+  
+  /* Widget and Card Styles */
+
+
+  .widget {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between cards */
+    max-width: 900px; /* Set a maximum width for the widget */
+    margin: 0 auto; /* Center the widget on the page */
+  }
+  
+  .card {
+    background-color: #333;
+    border-radius: 0;
+    padding: 10px;
+    flex: 0 1 calc(33.33% - 10px); /* Adjust the width for the cards to occupy one-third of the available space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+  
+.card img {
+    height: 150px; /* Adjust the height of the image */
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card-footer {
+    padding-top: 10px;
+    border-top: 1px solid #555;
+    text-align: center;
+  
+  }
+  
+  .card-footer .btn {
+    color: #fff;
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-footer .btn:hover {
+    background-color: #f57c00;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <link rel="stylesheet" href="dropdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <h2 class="card-title text-center mt-4">Form</h2>
+      <form class="p-4">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name <span class="required">*</span>:</label>
+            <input type="text" id="name" placeholder="Enter your Name" name="name" class="form-control" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email <span class="required">*</span>:</label>
+            <input type="email" id="email" placeholder="Enter your Email" name="email" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="phone">Phone <span class="required">*</span>:</label>
+            <input type="tel" id="phone" placeholder="Enter your Phone" name="phone" class="form-control" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="country">Country <span class="required">*</span>:</label>
+            <select id="country" name="country" class="form-control" required>
+              <option value="">Select a country</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="canada">Canada</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="city">City <span class="required">*</span>:</label>
+            <input type="text" id="city" placeholder="Enter your City" name="city" class="form-control" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="occupation">Occupation <span class="required">*</span>:</label>
+            <select id="occupation" name="occupation" class="form-control" required>
+              <option value="">Select an occupation</option>
+              <option value="student">Student</option>
+              <option value="professional">Professional</option>
+              <option value="business">Business</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="gender">Gender <span class="required">*</span>:</label>
+            <select id="gender" name="gender" class="form-control" required>
+              <option value="">Select a gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="dob">Date of Birth <span class="required">*</span>:</label>
+            <input type="date" id="dob" name="dob" class="form-control" required>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+          <button type="button" class="btn btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

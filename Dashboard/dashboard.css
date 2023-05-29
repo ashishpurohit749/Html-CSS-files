@@ -1,0 +1,210 @@
+/* Navbar */
+.navbar {
+    background-color: #000;
+    padding: 20px;
+  }
+  
+  .navbar-logo img {
+    width: 50px;
+    height: 50px;
+    /* Add any additional styling for the logo */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #ffcc00;
+    /* Add any additional hover effect */
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+}
+  
+.dropdown-item {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #ffcc00;
+    /* Add any additional hover effect */
+    color: #000;
+  }
+  
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Login and Picture Sections */
+  body {
+    background-color: #f2f2f2; /* Set your desired background color */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    background-color: #c3c2c2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.login-form .btn {
+    background-color: #222f3e; /* Set your desired background color */
+    color: #fffdfd; /* Set your desired text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust the button padding as needed */
+    border-radius: 5px; /* Apply border radius to create rounded corners */
+    cursor: pointer; /* Add cursor style on hover */
+    /* Add any other styles or modifications as needed */
+}
+
+.form-group label {
+    color: #000;
+    font-size: 18px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
+
+.register-form-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    background-color: #c3c2c2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.register-form h2 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.register-form .btn {
+    background-color: #222f3e; /* Set your desired background color */
+    color: #fffdfd; /* Set your desired text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust the button padding as needed */
+    border-radius: 5px; /* Apply border radius to create rounded corners */
+    cursor: pointer; /* Add cursor style on hover */
+    /* Add any other styles or modifications as needed */
+}
+
+.register-form .form-group label {
+    color: #000;
+    font-size: 18px;
+}
+
+.register-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.picture-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-content {
+    text-align: center;
+}
+
+
+  .picture-section {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .picture-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .picture-content p {
+    font-size: 16px;
+    /* Add any additional styling for the text */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  /* Add any additional futuristic styles based on your project's requirements */
+  
+
+
+
+  
